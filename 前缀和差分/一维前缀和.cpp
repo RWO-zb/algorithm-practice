@@ -7,10 +7,10 @@ int main(){
     int m,n;
     cin>>n>>m;
     for(int i=1;i<=n;i++)cin>>a[i];
-    for(int i=1;i<=n;i++)sum[i]=sum[i-1]+a[i];
+    for(int i=1;i<=n;i++)sum[i]=sum[i-1]+a[i];//预处理
     while(m--){
         int l,r;
         cin>>l>>r;
-        cout<<sum[r]-sum[l-1]<<endl;
+        cout<<sum[r]-sum[l-1]<<endl;//计算l到r的和
     }
 }
